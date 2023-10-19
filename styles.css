@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    z-index: 2;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 85%;
+    margin: auto;
+}
+header nav .logo{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+header nav .logo span{
+    color: #0099bd;
+}
+header nav .nav-links a{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 35px;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+header nav .nav-links a:hover{
+    color: #0099bd;
+}
+
+#btnM{
+    display: none;
+}
+
+
+.home{
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),url(/images/back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home h1{
+    color: #fff;
+    font-size: 55px;
+}
+
+@media(max-width : 750px){
+    #btnM{
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+    }
+    header nav .nav-links{
+        position: absolute;
+        top: -100vh;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(15px);
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: 0.4s;
+    }
+    header nav .nav-links.active{
+        top: 100%;
+    }
+    header nav .nav-links a{
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        transition: 0.3s;
+    }
+    header nav .nav-links a:hover{
+        color: #fff;
+        background-color: #0099bd;
+    }
+}
