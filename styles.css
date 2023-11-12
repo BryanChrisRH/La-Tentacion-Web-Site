@@ -14,6 +14,12 @@ header{
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     z-index: 2;
 }
+section{
+    padding: 50px 10%;
+}
+img{
+    width: 100%;
+}
 header nav{
     display: flex;
     justify-content: space-between;
@@ -44,7 +50,15 @@ header nav .nav-links a:hover{
 #btnM{
     display: none;
 }
-
+.btn{
+    padding: 7px 16px;
+    border: 2px solid #1e3932;
+    border-radius: 40px;
+}
+.btn:hover{
+    color: #fff;
+    background: #1e3932;
+}
 
 .home{
     background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),url(/images/back1.jpg);
@@ -104,6 +118,7 @@ header nav .nav-links a:hover{
 
 .heading{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .heading span{
@@ -174,4 +189,27 @@ header nav .nav-links a:hover{
 .box .btn:hover{
     background: #ebdbc8;
     color: #1e3932
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.delivery-img{
+    flex: 1 1 21rem;
+}
+
+.delivery-text{
+    flex: 1 1 21rem;
+}
+.delivery-text h2{
+    font-size: 1.2rem;
+    color: black;
+}
+.delivery-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
 }
